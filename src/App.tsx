@@ -5,6 +5,7 @@ import {
   processForm,
 } from './lib/formEngine';
 import { loadPatientRecord } from './lib/patientRecord';
+import { applyDemoFill, loadDemoAnswerKey } from './lib/demoFill';
 import type {
   AuditEntry,
   FieldState,
@@ -236,6 +237,27 @@ export default function App() {
     setScreen('export');
   }, [addAudit]);
 
+  const handleFillForDemo = useCallback(async () => {
+    if (!processed) return;
+    const answerKey = await loadDemoAnswerKey(processed.schema.formId);
+    setFieldStates((prev) =>
+      applyDemoFill(processed.fields, prev, answerKey),
+    );
+    addAudit('Demo fill — all fields auto-completed for export');
+    setVerifiedCollapsed(false);
+  }, [addAudit, processed]);
+
+  const handleFillForDemoAndExport = useCallback(async () => {
+    if (!processed) return;
+    const answerKey = await loadDemoAnswerKey(processed.schema.formId);
+    setFieldStates((prev) =>
+      applyDemoFill(processed.fields, prev, answerKey),
+    );
+    addAudit('Demo fill — all fields auto-completed for export');
+    addAudit('Form signed — generating filled PDF');
+    setScreen('export');
+  }, [processed]);
+
   const handleSelectForm = (formId: string) => {
     setSelectedFormId(formId);
     setScreen('patient-select');
@@ -298,6 +320,7 @@ export default function App() {
         patientName={patientName}
         aiMeta={processed.aiMeta}
         onStartReview={handleStartReview}
+        onFillForDemo={handleFillForDemoAndExport}
       />
     );
   }
@@ -330,6 +353,7 @@ export default function App() {
         aiMetaMessage={
           processed.aiMeta?.fallback ? processed.aiMeta.message : undefined
         }
+        onFillForDemo={handleFillForDemo}
         onSignExport={handleSignExport}
       />
 

@@ -7,6 +7,7 @@ interface CompletenessOverviewProps {
   patientName: string;
   aiMeta?: ProcessedForm['aiMeta'];
   onStartReview: (filter?: 'prefilled' | 'judgment' | 'unable') => void;
+  onFillForDemo: () => void;
 }
 
 export default function CompletenessOverview({
@@ -15,6 +16,7 @@ export default function CompletenessOverview({
   patientName,
   aiMeta,
   onStartReview,
+  onFillForDemo,
 }: CompletenessOverviewProps) {
   const counts = countByType(fields);
 
@@ -133,6 +135,13 @@ export default function CompletenessOverview({
         </div>
 
         <div className="completeness-actions">
+          <button
+            type="button"
+            className="btn btn--secondary btn--lg"
+            onClick={onFillForDemo}
+          >
+            Fill for demo &amp; export
+          </button>
           <button
             type="button"
             className="btn btn--primary btn--lg"

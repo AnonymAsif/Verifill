@@ -5,6 +5,7 @@ interface TopBarProps {
   totalCount: number;
   allReviewed: boolean;
   aiMetaMessage?: string;
+  onFillForDemo: () => void;
   onSignExport: () => void;
 }
 
@@ -15,6 +16,7 @@ export default function TopBar({
   totalCount,
   allReviewed,
   aiMetaMessage,
+  onFillForDemo,
   onSignExport,
 }: TopBarProps) {
   const pct = Math.round((reviewedCount / totalCount) * 100);
@@ -48,14 +50,23 @@ export default function TopBar({
         </div>
       </div>
 
-      <button
-        type="button"
-        className="btn btn--primary"
-        disabled={!allReviewed}
-        onClick={onSignExport}
-      >
-        Sign &amp; Export
-      </button>
+      <div className="top-bar__actions">
+        <button
+          type="button"
+          className="btn btn--secondary btn--sm"
+          onClick={onFillForDemo}
+        >
+          Fill for demo
+        </button>
+        <button
+          type="button"
+          className="btn btn--primary"
+          disabled={!allReviewed}
+          onClick={onSignExport}
+        >
+          Sign &amp; Export
+        </button>
+      </div>
     </header>
     </>
   );
