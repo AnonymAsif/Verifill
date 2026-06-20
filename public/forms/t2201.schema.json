@@ -1,0 +1,125 @@
+{
+  "formId": "t2201",
+  "title": "T2201 — Disability Tax Credit Certificate",
+  "issuer": "Canada Revenue Agency",
+  "pdfFile": "t2201-fill-23e.pdf",
+  "note": "Schema + fill map merged. `pdfField` is the EXACT AcroForm field name in the PDF (prefix shown in full). Field inventory: _fields_t2201.json. Booleans/radios use PDF on-state values in `states`; their option MEANING (which index = Yes) is NOT certain from the field tree — verify against the live form (open in browser) before trusting auto-checks. dateFormat is what the app must coerce dates to before writing.",
+  "dateFormat": "YYYY-MM-DD",
+  "patientNameOnEveryPage": {
+    "note": "Each practitioner page repeats a PatientName[0] field — set ALL of them to the patient's full name.",
+    "pdfFields": [
+      "form1[0].Page4_Vision[0].PatientName[0]",
+      "form1[0].Page5_Speaking[0].PatientName[0]",
+      "form1[0].Page6_Hearing[0].PatientName[0]",
+      "form1[0].Page7_Walking[0].PatientName[0]",
+      "form1[0].Page8_Eliminating[0].PatientName[0]",
+      "form1[0].Page9_Feeding[0].PatientName[0]",
+      "form1[0].Page10_Dressing[0].PatientName[0]",
+      "form1[0].Page11_Mental1[0].PatientName[0]",
+      "form1[0].Page12_Mental2[0].PatientName[0]",
+      "form1[0].Page13_Mental3[0].PatientName[0]",
+      "form1[0].Page14_Cumulative[0].PatientName[0]",
+      "form1[0].Page16_Certification[0].PatientName[0]"
+    ]
+  },
+  "sections": [
+    {
+      "id": "patient_details",
+      "title": "Patient details (Part A)",
+      "fields": [
+        { "id": "patient_first_name", "label": "First name", "type": "text", "nature": "objective", "pdfField": "form1[0].Page1_PartA1[0].PartA_Q1_sf[0].PartA_Q1_FirstName[0]" },
+        { "id": "patient_last_name", "label": "Last name", "type": "text", "nature": "objective", "pdfField": "form1[0].Page1_PartA1[0].PartA_Q1_sf[0].PartA_Q1_LastName[0]" },
+        { "id": "patient_sin", "label": "Social insurance number", "type": "text", "nature": "objective", "pdfField": "form1[0].Page1_PartA1[0].PartA_Q1_sf[0].PartA_Q1_SINComb[0].PartA_Q1_SIN[0]" },
+        { "id": "patient_dob", "label": "Date of birth", "type": "date", "nature": "objective", "pdfField": "form1[0].Page1_PartA1[0].PartA_Q1_sf[0].PartA_Q1_DOBComb[0].PartA_Q1_DOB[0]" },
+        { "id": "patient_address", "label": "Mailing address", "type": "text", "nature": "objective", "pdfField": "form1[0].Page1_PartA1[0].PartA_Q1_sf[0].PartA_Q1_Mailing[0]" },
+        { "id": "patient_city", "label": "City", "type": "text", "nature": "objective", "pdfField": "form1[0].Page1_PartA1[0].PartA_Q1_sf[0].PartA_Q1_City[0]" },
+        { "id": "patient_postal", "label": "Postal code", "type": "text", "nature": "objective", "pdfField": "form1[0].Page1_PartA1[0].PartA_Q1_sf[0].PartA_Q1_PostalComb[0].PartA_Q1_Postal[0]" }
+      ]
+    },
+    {
+      "id": "vision", "title": "Impairment — Vision",
+      "fields": [
+        { "id": "vision_details", "label": "Nature/effects of vision impairment", "type": "text", "nature": "judgment", "pdfField": "form1[0].Page4_Vision[0].Vision_sf[0].Vision_Q1_sf[0].Details_sf[0].Vision_Q1_details[0]" }
+      ]
+    },
+    {
+      "id": "speaking", "title": "Impairment — Speaking",
+      "fields": [
+        { "id": "speaking_markedly_restricted", "label": "Markedly restricted in speaking?", "type": "radio", "nature": "judgment", "pdfField": "form1[0].Page5_Speaking[0].Speaking_sf[0].Speaking_Q2_sf[0].Speaking_Q2_RadioButtonList[0]", "states": ["/0","/1","/2"], "verifyOptions": true },
+        { "id": "speaking_details", "label": "Effects", "type": "text", "nature": "judgment", "pdfField": "form1[0].Page5_Speaking[0].Speaking_sf[0].Speaking_Q1_sf[0].Details_sf[0].SpeakingQ1[0].Speaking_Q1_details[0]" },
+        { "id": "speaking_onset_year", "label": "Year restriction began", "type": "text", "nature": "judgment", "pdfField": "form1[0].Page5_Speaking[0].Speaking_sf[0].Speaking_Q7_sf[0].Year_sf[0].Year[0]" },
+        { "id": "speaking_duration_12mo", "label": "Lasted/expected ≥12 months?", "type": "radio", "nature": "judgment", "pdfField": "form1[0].Page5_Speaking[0].Speaking_sf[0].Speaking_Q8_sf[0].Speaking_Q8_RadioButtonList[0]", "states": ["/0","/1"], "verifyOptions": true }
+      ]
+    },
+    {
+      "id": "hearing", "title": "Impairment — Hearing",
+      "fields": [
+        { "id": "hearing_details", "label": "Effects of hearing impairment", "type": "text", "nature": "judgment", "pdfField": "form1[0].Page6_Hearing[0].Hearing_sf[0].Hearing_Q1_sf[0].Details_sf[0].HearingQ1[0].Hearing_Q1_details[0]" },
+        { "id": "hearing_onset_year", "label": "Year restriction began", "type": "text", "nature": "judgment", "pdfField": "form1[0].Page6_Hearing[0].Hearing_sf[0].Hearing_Q7_sf[0].Year_sf[0].Year[0]" },
+        { "id": "hearing_duration_12mo", "label": "Lasted/expected ≥12 months?", "type": "radio", "nature": "judgment", "pdfField": "form1[0].Page6_Hearing[0].Hearing_sf[0].Hearing_Q8_sf[0].Hearing_Q8_RadioButtonList[0]", "states": ["/0","/1"], "verifyOptions": true }
+      ]
+    },
+    {
+      "id": "walking", "title": "Impairment — Walking",
+      "fields": [
+        { "id": "walking_markedly_restricted", "label": "Markedly restricted in walking?", "type": "radio", "nature": "judgment", "pdfField": "form1[0].Page7_Walking[0].Walking_sf[0].Walking_Q2_sf[0].Walking_Q2_RadioButtonList[0]", "states": ["/0","/1","/2"], "verifyOptions": true },
+        { "id": "walking_nature", "label": "Nature of impairment", "type": "text", "nature": "judgment", "pdfField": "form1[0].Page7_Walking[0].Walking_sf[0].Walking_Q1_sf[0].Q1_Details_sf[0].Q1[0].Walking_Q1_details[0]" },
+        { "id": "walking_effects", "label": "Effects on everyday life", "type": "text", "nature": "judgment", "pdfField": "form1[0].Page7_Walking[0].Walking_sf[0].Walking_Q3_sf[0].Q3_Details_sf[0].Q3[0].Walking_Q3_details[0]" },
+        { "id": "walking_onset_year", "label": "Year restriction began", "type": "text", "nature": "judgment", "pdfField": "form1[0].Page7_Walking[0].Walking_sf[0].Walking_Q7_sf[0].Year_sf[0].Year[0]" },
+        { "id": "walking_duration_12mo", "label": "Lasted/expected ≥12 months?", "type": "radio", "nature": "judgment", "pdfField": "form1[0].Page7_Walking[0].Walking_sf[0].Walking_Q8_sf[0].Walking_Q8_RadioButtonList[0]", "states": ["/0","/1"], "verifyOptions": true }
+      ]
+    },
+    {
+      "id": "eliminating", "title": "Impairment — Eliminating (bowel/bladder)",
+      "fields": [
+        { "id": "eliminating_markedly_restricted", "label": "Markedly restricted in eliminating?", "type": "radio", "nature": "judgment", "pdfField": "form1[0].Page8_Eliminating[0].Eliminating_sf[0].Eliminating_Q2_sf[0].Eliminating_Q2_RadioButtonList[0]", "states": ["/0","/1","/2"], "verifyOptions": true },
+        { "id": "eliminating_details", "label": "Nature/effects", "type": "text", "nature": "judgment", "pdfField": "form1[0].Page8_Eliminating[0].Eliminating_sf[0].Eliminating_Q1_sf[0].Q1_Details_sf[0].Q1[0].Eliminating_Q1_details[0]" },
+        { "id": "eliminating_onset_year", "label": "Year restriction began", "type": "text", "nature": "judgment", "pdfField": "form1[0].Page8_Eliminating[0].Eliminating_sf[0].EliminatingQ7_sf[0].Year_sf[0].Year[0]" },
+        { "id": "eliminating_duration_12mo", "label": "Lasted/expected ≥12 months?", "type": "radio", "nature": "judgment", "pdfField": "form1[0].Page8_Eliminating[0].Eliminating_sf[0].Eliminating_Q8_sf[0].Eliminating_Q8_RadioButtonList[0]", "states": ["/0","/1"], "verifyOptions": true }
+      ]
+    },
+    {
+      "id": "feeding", "title": "Impairment — Feeding",
+      "fields": [
+        { "id": "feeding_markedly_restricted", "label": "Markedly restricted in feeding?", "type": "radio", "nature": "judgment", "pdfField": "form1[0].Page9_Feeding[0].Feeding_sf[0].Feeding_Q2_sf[0].Feeding_Q2_RadioButtonList[0]", "states": ["/0","/1","/2"], "verifyOptions": true },
+        { "id": "feeding_details", "label": "Nature/effects", "type": "text", "nature": "judgment", "pdfField": "form1[0].Page9_Feeding[0].Feeding_sf[0].Feeding_Q1_sf[0].Q1_Details_sf[0].Q1[0].Feeding_Q1_details[0]" },
+        { "id": "feeding_onset_year", "label": "Year restriction began", "type": "text", "nature": "judgment", "pdfField": "form1[0].Page9_Feeding[0].Feeding_sf[0].Feeding_Q7_sf[0].Year_sf[0].Year[0]" },
+        { "id": "feeding_duration_12mo", "label": "Lasted/expected ≥12 months?", "type": "radio", "nature": "judgment", "pdfField": "form1[0].Page9_Feeding[0].Feeding_sf[0].Feeding_Q8_sf[0].Feeding_Q8_RadioButtonList[0]", "states": ["/0","/1"], "verifyOptions": true }
+      ]
+    },
+    {
+      "id": "dressing", "title": "Impairment — Dressing",
+      "fields": [
+        { "id": "dressing_markedly_restricted", "label": "Markedly restricted in dressing?", "type": "radio", "nature": "judgment", "pdfField": "form1[0].Page10_Dressing[0].Dressing_sf[0].Dressing_Q2_sf[0].Dressing_Q2_RadioButtonList[0]", "states": ["/0","/1","/2"], "verifyOptions": true },
+        { "id": "dressing_details", "label": "Nature/effects", "type": "text", "nature": "judgment", "pdfField": "form1[0].Page10_Dressing[0].Dressing_sf[0].Dressing_Q1_sf[0].Q1_Details_sf[0].Q1[0].Dressing_Q1_details[0]" },
+        { "id": "dressing_onset_year", "label": "Year restriction began", "type": "text", "nature": "judgment", "pdfField": "form1[0].Page10_Dressing[0].Dressing_sf[0].Dressing_Q7_sf[0].Year_sf[0].Year[0]" },
+        { "id": "dressing_duration_12mo", "label": "Lasted/expected ≥12 months?", "type": "radio", "nature": "judgment", "pdfField": "form1[0].Page10_Dressing[0].Dressing_sf[0].Dressing_Q8_sf[0].Dressing_Q8_RadioButtonList[0]", "states": ["/0","/1"], "verifyOptions": true }
+      ]
+    },
+    {
+      "id": "mental", "title": "Impairment — Mental functions",
+      "note": "Mental functions span pages 11–13 with a multi-row table (Mental2) — complex. For the demo, treat as details + restriction; map the full table later from _fields_t2201.json if needed.",
+      "fields": [
+        { "id": "mental_details", "label": "Nature of mental-function impairment", "type": "text", "nature": "judgment", "pdfField": "form1[0].Page11_Mental1[0].Mental1_sf[0].Mental1_Q1_sf[0].Q1_Details_sf[0].Q1[0].Mental1_Q1_details[0]" },
+        { "id": "mental_duration_12mo", "label": "Lasted/expected ≥12 months?", "type": "radio", "nature": "judgment", "pdfField": "form1[0].Page13_Mental3[0].Mental3_sf[0].Mental3_Q8_sf[0].M3_Q8_RadioButtonList1[0]", "states": ["/0","/1"], "verifyOptions": true }
+      ]
+    },
+    {
+      "id": "cumulative", "title": "Cumulative effect of significant restrictions",
+      "fields": [
+        { "id": "cumulative_details", "label": "Describe the cumulative effect", "type": "text", "nature": "judgment", "pdfField": "form1[0].Page14_Cumulative[0].Cumulative_sf[0].Cumul_Q2_sf[0].Q2_details_sf[0].Q2[0].Cumul_Q2_details[0]" }
+      ]
+    },
+    {
+      "id": "certification", "title": "Medical practitioner certification",
+      "fields": [
+        { "id": "practitioner_name", "label": "Practitioner name", "type": "text", "nature": "objective", "pdfField": "form1[0].Page16_Certification[0].Certification_sf[0].Cert_Sign_sf[0].PatientName[0]", "verifyOptions": true, "note": "field is named PatientName inside the signature block — confirm it is the practitioner-name line" },
+        { "id": "practitioner_profession", "label": "Profession", "type": "radio", "nature": "objective", "pdfField": "form1[0].Page16_Certification[0].Certification_sf[0].Cert_type_sf[0].Cert_Med_RadioButtonGroup1[0]", "states": ["/0","/1","/2","/3","/4","/5","/6","/7"], "verifyOptions": true },
+        { "id": "practitioner_license", "label": "License / registration number", "type": "text", "nature": "objective", "pdfField": "form1[0].Page16_Certification[0].Certification_sf[0].Cert_Sign_sf[0].Cert_License[0]" },
+        { "id": "practitioner_phone", "label": "Telephone", "type": "text", "nature": "objective", "pdfField": "form1[0].Page16_Certification[0].Certification_sf[0].Cert_Sign_sf[0].Cert_TelephoneNumber[0]" },
+        { "id": "practitioner_address", "label": "Address", "type": "text", "nature": "objective", "pdfField": "form1[0].Page16_Certification[0].Certification_sf[0].Cert_Sign_sf[0].Cert_Address[0]" },
+        { "id": "certification_date", "label": "Date certified", "type": "date", "nature": "objective", "pdfField": "form1[0].Page16_Certification[0].Certification_sf[0].Cert_Sign_sf[0].Date_Comb[0].Certification_Date_Fill[0]" }
+      ]
+    }
+  ]
+}

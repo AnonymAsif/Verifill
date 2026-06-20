@@ -1,0 +1,85 @@
+{
+  "formId": "wsib_form8",
+  "title": "WSIB Form 8 — Health Professional's Report (0008A)",
+  "issuer": "Ontario Workplace Safety and Insurance Board",
+  "pdfFile": "0008a_202408_healthprofessionalsreport_web.pdf",
+  "note": "Schema + fill map merged. `pdfField` is the EXACT AcroForm field name (clean names on this form). Full inventory incl. all checkboxes: _fields_healthprof.json. Checkboxes 'C - CB - n' use on-state '/Yes'; province choice 'A - CB - 1' uses values like 'ON'. Radio on-state meanings — verify on the live form. NOTE: WSIB is for workplace injuries, so the demo patient must be a work-injury scenario (Golda's SCI is non-occupational — use a different/demo scenario or a work-injury synthetic patient for this form).",
+  "dateFormat": "YYYY-MM-DD",
+  "sections": [
+    {
+      "id": "A_worker", "title": "A — Worker & employer",
+      "fields": [
+        { "id": "worker_last_name", "label": "Last name", "type": "text", "nature": "objective", "pdfField": "A - last name" },
+        { "id": "worker_first_name", "label": "First name", "type": "text", "nature": "objective", "pdfField": "A - first name" },
+        { "id": "worker_initials", "label": "Initials", "type": "text", "nature": "objective", "pdfField": "A - initials" },
+        { "id": "worker_dob", "label": "Date of birth", "type": "date", "nature": "objective", "pdfField": "A - date of birth" },
+        { "id": "worker_address", "label": "Address", "type": "text", "nature": "objective", "pdfField": "A - address" },
+        { "id": "worker_city", "label": "City/town", "type": "text", "nature": "objective", "pdfField": "A - city/town" },
+        { "id": "worker_province", "label": "Province", "type": "choice", "nature": "objective", "pdfField": "A - CB - 1", "options": ["ON","PE","NB","SK","AB","BC","NF","NT","NS","NU","QC","YT"] },
+        { "id": "worker_postal", "label": "Postal code", "type": "text", "nature": "objective", "pdfField": "A - postal code" },
+        { "id": "worker_phone", "label": "Telephone", "type": "text", "nature": "objective", "pdfField": "A - telephone" },
+        { "id": "worker_sin", "label": "Social insurance number", "type": "text", "nature": "objective", "pdfField": "A - social insurance number" },
+        { "id": "employer_name", "label": "Employer name", "type": "text", "nature": "objective", "pdfField": "A - employer name" },
+        { "id": "claim_number", "label": "WSIB claim number", "type": "text", "nature": "objective", "pdfField": "WorkerClaimNumber" }
+      ]
+    },
+    {
+      "id": "B_incident", "title": "B — Incident",
+      "fields": [
+        { "id": "incident_date", "label": "Date of incident/symptoms", "type": "date", "nature": "objective", "pdfField": "B - date of incident/symptoms" },
+        { "id": "incident_details", "label": "Incident date and details", "type": "text", "nature": "judgment", "pdfField": "B - incident date and details section" },
+        { "id": "occupation", "label": "Occupation", "type": "text", "nature": "objective", "pdfField": "B - occupation" },
+        { "id": "areas_of_injury", "label": "Area(s) of injury/illness", "type": "text", "nature": "judgment", "pdfField": "Area(s) of injury(ies)/illness(es)" }
+      ]
+    },
+    {
+      "id": "C_clinical", "title": "C — Clinical information",
+      "note": "Checkboxes 'C - CB - 1'..'C - CB - 13' (on-state '/Yes') correspond to printed findings — map labels from the PDF text. See _fields_healthprof.json.",
+      "fields": [
+        { "id": "diagnosis", "label": "Diagnosis", "type": "text", "nature": "judgment", "pdfField": "C - diagnosis" },
+        { "id": "clinical_if_yes_describe", "label": "If yes, describe", "type": "text", "nature": "judgment", "pdfField": "C - if yes describe" }
+      ]
+    },
+    {
+      "id": "D_treatment", "title": "D — Treatment plan",
+      "fields": [
+        { "id": "treatment_plan", "label": "Treatment plan", "type": "text", "nature": "judgment", "pdfField": "D - what is the treatment plan" },
+        { "id": "med1_name", "label": "Medication 1", "type": "text", "nature": "objective", "pdfField": "D - 1 - work injury/illness medications" },
+        { "id": "med1_dose", "label": "Medication 1 dose", "type": "text", "nature": "objective", "pdfField": "D - 1 - dose" },
+        { "id": "med1_frequency", "label": "Medication 1 frequency", "type": "text", "nature": "objective", "pdfField": "D - 1 - frequency" },
+        { "id": "med1_duration", "label": "Medication 1 duration", "type": "text", "nature": "objective", "pdfField": "D - 1 - duration" },
+        { "id": "referral_specialty", "label": "Specialist/specialty", "type": "text", "nature": "judgment", "pdfField": "D - specialist/specialty" },
+        { "id": "referral_facility", "label": "Name of referral or facility", "type": "text", "nature": "objective", "pdfField": "D - name of referral or facility" },
+        { "id": "referral_appointment_date", "label": "Appointment date", "type": "date", "nature": "objective", "pdfField": "D - appointment date" }
+      ]
+    },
+    {
+      "id": "E_billing", "title": "E — Billing",
+      "fields": [
+        { "id": "billing_service_code_1", "label": "Service code 1", "type": "text", "nature": "objective", "pdfField": "E - 1 - service code" },
+        { "id": "billing_service_code_2", "label": "Service code 2", "type": "text", "nature": "objective", "pdfField": "E - 2 - service code" },
+        { "id": "billing_provider_id", "label": "WSIB provider ID", "type": "text", "nature": "objective", "pdfField": "E - WSIB provider ID" },
+        { "id": "billing_invoice_number", "label": "Invoice number", "type": "text", "nature": "objective", "pdfField": "E - your invoice number" },
+        { "id": "billing_service_date", "label": "Service date", "type": "date", "nature": "objective", "pdfField": "E - service date" },
+        { "id": "billing_provider_name", "label": "Health professional name", "type": "text", "nature": "objective", "pdfField": "E - health professional name " },
+        { "id": "billing_hst_number", "label": "HST registration number", "type": "text", "nature": "objective", "pdfField": "E - HST registration number" }
+      ]
+    },
+    {
+      "id": "F_rtw", "title": "F — Return to work / functional abilities",
+      "fields": [
+        { "id": "rtw_explanation", "label": "Explanation", "type": "text", "nature": "judgment", "pdfField": "F - please provide explanation" },
+        { "id": "rtw_describe", "label": "Describe restrictions", "type": "text", "nature": "judgment", "pdfField": "F - please describe" },
+        { "id": "rtw_next_appointment", "label": "Date of next appointment", "type": "date", "nature": "objective", "pdfField": "F - date of next appointment" },
+        { "id": "rtw_provider_name", "label": "Health professional name", "type": "text", "nature": "objective", "pdfField": "F - health professional’s name" }
+      ]
+    },
+    {
+      "id": "G_signoff", "title": "G — Sign-off",
+      "fields": [
+        { "id": "signoff_signature", "label": "Signature", "type": "text", "nature": "objective", "pdfField": "G - signature" },
+        { "id": "signoff_date", "label": "Date", "type": "date", "nature": "objective", "pdfField": "G - date" }
+      ]
+    }
+  ]
+}

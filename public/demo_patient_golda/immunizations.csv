@@ -1,0 +1,11 @@
+DATE,PATIENT,ENCOUNTER,CODE,DESCRIPTION,BASE_COST
+2016-11-30T09:52:48Z,e39fa777-dc9e-e86a-4137-01b23ae746a5,e39fa777-dc9e-e86a-2468-3e0f805d7915,140,Influenza  split virus  trivalent  PF,136.00
+2016-11-30T09:52:48Z,e39fa777-dc9e-e86a-4137-01b23ae746a5,e39fa777-dc9e-e86a-2468-3e0f805d7915,52,Hep A  adult,136.00
+2018-12-05T09:52:48Z,e39fa777-dc9e-e86a-4137-01b23ae746a5,e39fa777-dc9e-e86a-9b0b-b130e2575510,140,Influenza  split virus  trivalent  PF,136.00
+2018-12-05T09:52:48Z,e39fa777-dc9e-e86a-4137-01b23ae746a5,e39fa777-dc9e-e86a-9b0b-b130e2575510,113,Td (adult)  5 Lf tetanus toxoid  preservative free  adsorbed,136.00
+2018-12-05T09:52:48Z,e39fa777-dc9e-e86a-4137-01b23ae746a5,e39fa777-dc9e-e86a-9b0b-b130e2575510,52,Hep A  adult,136.00
+2020-12-09T09:52:48Z,e39fa777-dc9e-e86a-4137-01b23ae746a5,e39fa777-dc9e-e86a-d420-6c6ce8e2867f,140,Influenza  split virus  trivalent  PF,136.00
+2021-10-13T09:52:48Z,e39fa777-dc9e-e86a-4137-01b23ae746a5,e39fa777-dc9e-e86a-9764-5406115685d2,208,COVID-19  mRNA  LNP-S  PF  30 mcg/0.3 mL dose,136.00
+2021-11-03T09:52:48Z,e39fa777-dc9e-e86a-4137-01b23ae746a5,e39fa777-dc9e-e86a-47e9-f2ba62aed307,208,COVID-19  mRNA  LNP-S  PF  30 mcg/0.3 mL dose,136.00
+2022-12-14T09:52:48Z,e39fa777-dc9e-e86a-4137-01b23ae746a5,e39fa777-dc9e-e86a-86d9-71502be09bd5,140,Influenza  split virus  trivalent  PF,136.00
+2024-12-18T09:52:48Z,e39fa777-dc9e-e86a-4137-01b23ae746a5,e39fa777-dc9e-e86a-f2ce-503af2b39c36,140,Influenza  split virus  trivalent  PF,136.00

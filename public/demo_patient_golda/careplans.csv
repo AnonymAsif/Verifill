@@ -1,0 +1,4 @@
+Id,START,STOP,PATIENT,ENCOUNTER,CODE,DESCRIPTION,REASONCODE,REASONDESCRIPTION
+e39fa777-dc9e-e86a-602a-47b01802c8a7,2018-05-12,2018-06-06,e39fa777-dc9e-e86a-4137-01b23ae746a5,e39fa777-dc9e-e86a-df27-260f412165dd,225358003,Wound care (regime/therapy),283371005,Laceration of forearm (disorder)
+e39fa777-dc9e-e86a-339c-608c2f9bf642,2024-07-15,2024-08-14,e39fa777-dc9e-e86a-4137-01b23ae746a5,e39fa777-dc9e-e86a-5886-562eb0be52eb,133901003,Burn care (regime/therapy),403191005,Partial thickness burn (disorder)
+e39fa777-dc9e-e86a-79aa-938146dbdffb,2025-09-10,2026-02-01,e39fa777-dc9e-e86a-4137-01b23ae746a5,e39fa777-dc9e-e86a-7e58-aac0b10ebfe0,75162002,Spinal cord injury rehabilitation (regime/therapy),1734006,Fracture of vertebral column with spinal cord injury (disorder)

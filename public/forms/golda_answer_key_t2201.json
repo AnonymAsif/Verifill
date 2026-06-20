@@ -1,0 +1,59 @@
+{
+  "form": "t2201",
+  "patient": "demo_patient_golda",
+  "asOfDate": "2026-06-20",
+  "purpose": "Expected per-field output for the demo + a self-check for Cursor. status ∈ prefilled | comment_judgment | unable_to_assess. 'source' points to the exact Synthea row that justifies the value/comment.",
+  "demoCounts": { "note": "drives the completeness overview", "prefilled": 9, "comment_judgment": 6, "unable_to_assess": 6 },
+
+  "patient_details": {
+    "patient_first_name": { "status": "prefilled", "value": "Golda777", "source": { "file": "patients.csv", "field": "FIRST" } },
+    "patient_last_name":  { "status": "prefilled", "value": "Heller342", "source": { "file": "patients.csv", "field": "LAST" } },
+    "patient_dob":        { "status": "prefilled", "value": "1976-11-24", "source": { "file": "patients.csv", "field": "BIRTHDATE" } },
+    "patient_sin":        { "status": "prefilled", "value": "999-76-8359", "source": { "file": "patients.csv", "field": "SSN" }, "note": "synthetic US SSN; on a real CRA form this is a SIN" },
+    "patient_address":    { "status": "prefilled", "value": "219 Bernhard Pathway", "source": { "file": "patients.csv", "field": "ADDRESS" } },
+    "patient_city":       { "status": "prefilled", "value": "Carver", "source": { "file": "patients.csv", "field": "CITY" } },
+    "patient_postal":     { "status": "unable_to_assess", "reason": "Synthea record is US-format (ZIP 00000); no Canadian postal code in record" }
+  },
+
+  "walking": {
+    "walking_markedly_restricted": {
+      "status": "comment_judgment",
+      "suggested": "Yes",
+      "comment": "Strong supporting evidence: chronic paralysis due to a spinal-cord lesion with a vertebral fracture and spinal-cord injury (onset 2025-09-10), an active spinal-cord-injury rehabilitation care plan, and an ongoing course of physiotherapy (Sep–Nov 2025). This consistently supports a marked restriction in walking — but you must certify the clinical judgment.",
+      "sources": [
+        { "file": "conditions.csv", "match": "Chronic paralysis due to lesion of spinal cord (disorder)", "date": "2025-09-10" },
+        { "file": "conditions.csv", "match": "Fracture of vertebral column with spinal cord injury (disorder)", "date": "2025-09-10" },
+        { "file": "careplans.csv", "match": "Spinal cord injury rehabilitation (regime/therapy)", "date": "2025-09-10" },
+        { "file": "procedures.csv", "match": "Physical therapy procedure (regime/therapy)", "date": "2025-11-11" }
+      ]
+    },
+    "walking_nature":  { "status": "comment_judgment", "comment": "Traumatic spinal-cord injury (2025-09-10) with resulting chronic paralysis.", "sources": [ { "file": "conditions.csv", "match": "Traumatic injury of spinal cord and/or vertebral column (disorder)", "date": "2025-09-10" } ] },
+    "walking_effects": { "status": "comment_judgment", "comment": "Ongoing rehabilitation and physiotherapy indicate a sustained mobility limitation affecting everyday life; quantify the specific functional impact for the form.", "sources": [ { "file": "careplans.csv", "match": "Spinal cord injury rehabilitation (regime/therapy)", "date": "2025-09-10" } ] },
+    "walking_onset_year": { "status": "comment_judgment", "suggested": "2025", "comment": "Marked restriction dates from the spinal-cord injury on 2025-09-10.", "sources": [ { "file": "conditions.csv", "match": "Chronic paralysis due to lesion of spinal cord (disorder)", "date": "2025-09-10" } ] },
+    "walking_duration_12mo": {
+      "status": "comment_judgment",
+      "suggested": "Yes (expected)",
+      "comment": "TEACHING CASE: the injury onset is 2025-09-10, so as of 2026-06-20 only ~9 months have ELAPSED — under 12. However CRA accepts an impairment that is EXPECTED to last a continuous period of ≥12 months. Chronic paralysis from a spinal-cord lesion is expected to be prolonged. This is a judgment call, not a lookup — the dates alone would say 'No'; the clinical prognosis says 'Yes'.",
+      "sources": [ { "file": "conditions.csv", "match": "Chronic paralysis due to lesion of spinal cord (disorder)", "date": "2025-09-10" } ]
+    }
+  },
+
+  "eliminating": {
+    "eliminating_markedly_restricted": { "status": "comment_judgment", "suggested": "Assess", "comment": "Spinal-cord injury commonly affects bowel/bladder function, but this record contains no explicit documentation of an elimination impairment. Assess directly before certifying.", "sources": [ { "file": "conditions.csv", "match": "Traumatic injury of spinal cord and/or vertebral column (disorder)", "date": "2025-09-10" } ] }
+  },
+  "dressing": {
+    "dressing_markedly_restricted": { "status": "comment_judgment", "suggested": "Assess", "comment": "Paralysis can restrict dressing, but no dressing-specific functional assessment is documented in this record. Confirm before certifying.", "sources": [ { "file": "conditions.csv", "match": "Chronic paralysis due to lesion of spinal cord (disorder)", "date": "2025-09-10" } ] }
+  },
+
+  "vision":   { "vision_details":   { "status": "unable_to_assess", "reason": "No ophthalmologic/vision findings in this record" } },
+  "hearing":  { "hearing_details":  { "status": "unable_to_assess", "reason": "No audiology/hearing findings in this record" } },
+  "speaking": { "speaking_details": { "status": "unable_to_assess", "reason": "No speech-function findings in this record" } },
+  "feeding":  { "feeding_details":  { "status": "unable_to_assess", "reason": "No feeding-function findings in this record" } },
+  "mental":   { "mental_details":   { "status": "unable_to_assess", "reason": "GAD-7 / PHQ-2 screens exist but do not document a marked restriction in mental functions for everyday life; assess if relevant" } },
+
+  "certification": {
+    "practitioner_name":      { "status": "prefilled", "value": "<from logged-in practitioner profile>", "source": { "origin": "app/user context, not the patient record" } },
+    "practitioner_profession":{ "status": "prefilled", "value": "<from practitioner profile>", "source": { "origin": "app/user context" } },
+    "certification_date":     { "status": "prefilled", "value": "2026-06-20", "source": { "origin": "today's date" } }
+  }
+}

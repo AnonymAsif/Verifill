@@ -1,0 +1,1305 @@
+[
+ {
+  "name": "A - RB - 1",
+  "type": "button",
+  "states": [
+   "/0",
+   "/1"
+  ]
+ },
+ {
+  "name": "A - address",
+  "type": "text",
+  "states": null
+ },
+ {
+  "name": "A - city/town",
+  "type": "text",
+  "states": null
+ },
+ {
+  "name": "A - CB - 1",
+  "type": "choice",
+  "states": [
+   "ON",
+   "PE",
+   "NB",
+   "SK",
+   "AB",
+   "BC",
+   "NF",
+   "NT",
+   "NS",
+   "NU",
+   "QC",
+   "YT"
+  ]
+ },
+ {
+  "name": "A - postal code",
+  "type": "text",
+  "states": null
+ },
+ {
+  "name": "A - telephone",
+  "type": "text",
+  "states": null
+ },
+ {
+  "name": "A - social insurance number",
+  "type": "text",
+  "states": null
+ },
+ {
+  "name": "A - RB - 2",
+  "type": "button",
+  "states": [
+   "/0",
+   "/1",
+   "/2"
+  ]
+ },
+ {
+  "name": "A - employer name",
+  "type": "text",
+  "states": null
+ },
+ {
+  "name": "B - incident date and details section",
+  "type": "text",
+  "states": null
+ },
+ {
+  "name": "B - occupation",
+  "type": "text",
+  "states": null
+ },
+ {
+  "name": "C - CB - 1",
+  "type": "button",
+  "states": [
+   "/Yes"
+  ]
+ },
+ {
+  "name": "C - CB - 2",
+  "type": "button",
+  "states": [
+   "/Yes"
+  ]
+ },
+ {
+  "name": "C - CB - 3",
+  "type": "button",
+  "states": [
+   "/Yes"
+  ]
+ },
+ {
+  "name": "C - CB - 4",
+  "type": "button",
+  "states": [
+   "/Yes"
+  ]
+ },
+ {
+  "name": "C - CB - 5",
+  "type": "button",
+  "states": [
+   "/Yes"
+  ]
+ },
+ {
+  "name": "C - CB - 6",
+  "type": "button",
+  "states": [
+   "/Yes"
+  ]
+ },
+ {
+  "name": "C - CB - 7",
+  "type": "button",
+  "states": [
+   "/Yes"
+  ]
+ },
+ {
+  "name": "C - CB - 8",
+  "type": "button",
+  "states": [
+   "/Yes"
+  ]
+ },
+ {
+  "name": "C - CB - 9",
+  "type": "button",
+  "states": [
+   "/Yes"
+  ]
+ },
+ {
+  "name": "C - CB - 10",
+  "type": "button",
+  "states": [
+   "/Yes"
+  ]
+ },
+ {
+  "name": "C - CB - 11",
+  "type": "button",
+  "states": [
+   "/Yes"
+  ]
+ },
+ {
+  "name": "C - CB - 12",
+  "type": "button",
+  "states": [
+   "/Yes"
+  ]
+ },
+ {
+  "name": "C - CB - 13",
+  "type": "button",
+  "states": [
+   "/Yes"
+  ]
+ },
+ {
+  "name": "C - 1 - other",
+  "type": "text",
+  "states": null
+ },
+ {
+  "name": "C - CB - 14",
+  "type": "button",
+  "states": [
+   "/Yes"
+  ]
+ },
+ {
+  "name": "C - CB - 15",
+  "type": "button",
+  "states": [
+   "/Yes"
+  ]
+ },
+ {
+  "name": "C - CB - 16",
+  "type": "button",
+  "states": [
+   "/Yes"
+  ]
+ },
+ {
+  "name": "C - CB - 17",
+  "type": "button",
+  "states": [
+   "/Yes"
+  ]
+ },
+ {
+  "name": "C - CB - 18",
+  "type": "button",
+  "states": [
+   "/Yes"
+  ]
+ },
+ {
+  "name": "C - CB - 19",
+  "type": "button",
+  "states": [
+   "/Yes"
+  ]
+ },
+ {
+  "name": "C - CB - 20",
+  "type": "button",
+  "states": [
+   "/Yes"
+  ]
+ },
+ {
+  "name": "C - CB - 21",
+  "type": "button",
+  "states": [
+   "/Yes"
+  ]
+ },
+ {
+  "name": "C - CB - 22",
+  "type": "button",
+  "states": [
+   "/Yes"
+  ]
+ },
+ {
+  "name": "C - CB - 23",
+  "type": "button",
+  "states": [
+   "/Yes"
+  ]
+ },
+ {
+  "name": "C - CB - 24",
+  "type": "button",
+  "states": [
+   "/Yes"
+  ]
+ },
+ {
+  "name": "C - CB - 25",
+  "type": "button",
+  "states": [
+   "/Yes"
+  ]
+ },
+ {
+  "name": "C - CB - 26",
+  "type": "button",
+  "states": [
+   "/Yes"
+  ]
+ },
+ {
+  "name": "C - CB - 27",
+  "type": "button",
+  "states": [
+   "/Yes"
+  ]
+ },
+ {
+  "name": "C - CB - 28",
+  "type": "button",
+  "states": [
+   "/Yes"
+  ]
+ },
+ {
+  "name": "C - CB - 29",
+  "type": "button",
+  "states": [
+   "/Yes"
+  ]
+ },
+ {
+  "name": "C - CB - 30",
+  "type": "button",
+  "states": [
+   "/Yes"
+  ]
+ },
+ {
+  "name": "C - CB - 31",
+  "type": "button",
+  "states": [
+   "/Yes"
+  ]
+ },
+ {
+  "name": "C - CB - 32",
+  "type": "button",
+  "states": [
+   "/Yes"
+  ]
+ },
+ {
+  "name": "C - CB - 33",
+  "type": "button",
+  "states": [
+   "/Yes"
+  ]
+ },
+ {
+  "name": "C - CB - 34",
+  "type": "button",
+  "states": [
+   "/Yes"
+  ]
+ },
+ {
+  "name": "C - CB - 35",
+  "type": "button",
+  "states": [
+   "/Yes"
+  ]
+ },
+ {
+  "name": "C - CB - 36",
+  "type": "button",
+  "states": [
+   "/Yes"
+  ]
+ },
+ {
+  "name": "C - CB - 37",
+  "type": "button",
+  "states": [
+   "/Yes"
+  ]
+ },
+ {
+  "name": "C - CB - 38",
+  "type": "button",
+  "states": [
+   "/Yes"
+  ]
+ },
+ {
+  "name": "C - CB - 39",
+  "type": "button",
+  "states": [
+   "/Yes"
+  ]
+ },
+ {
+  "name": "C - CB - 40",
+  "type": "button",
+  "states": [
+   "/Yes"
+  ]
+ },
+ {
+  "name": "C - CB - 41",
+  "type": "button",
+  "states": [
+   "/Yes"
+  ]
+ },
+ {
+  "name": "C - CB - 42",
+  "type": "button",
+  "states": [
+   "/Yes"
+  ]
+ },
+ {
+  "name": "C - CB - 43",
+  "type": "button",
+  "states": [
+   "/Yes"
+  ]
+ },
+ {
+  "name": "C - CB - 44",
+  "type": "button",
+  "states": [
+   "/Yes"
+  ]
+ },
+ {
+  "name": "C - CB - 45",
+  "type": "button",
+  "states": [
+   "/Yes"
+  ]
+ },
+ {
+  "name": "C - CB - 46",
+  "type": "button",
+  "states": [
+   "/Yes"
+  ]
+ },
+ {
+  "name": "C - CB - 47",
+  "type": "button",
+  "states": [
+   "/Yes"
+  ]
+ },
+ {
+  "name": "C - CB - 48",
+  "type": "button",
+  "states": [
+   "/Yes"
+  ]
+ },
+ {
+  "name": "C - CB - 49",
+  "type": "button",
+  "states": [
+   "/Yes"
+  ]
+ },
+ {
+  "name": "C - CB - 50",
+  "type": "button",
+  "states": [
+   "/Yes"
+  ]
+ },
+ {
+  "name": "C - CB - 51",
+  "type": "button",
+  "states": [
+   "/Yes"
+  ]
+ },
+ {
+  "name": "C - CB - 52",
+  "type": "button",
+  "states": [
+   "/Yes"
+  ]
+ },
+ {
+  "name": "C - CB - 53",
+  "type": "button",
+  "states": [
+   "/Yes"
+  ]
+ },
+ {
+  "name": "C - CB - 54",
+  "type": "button",
+  "states": [
+   "/Yes"
+  ]
+ },
+ {
+  "name": "C - CB - 55",
+  "type": "button",
+  "states": [
+   "/Yes"
+  ]
+ },
+ {
+  "name": "C - CB - 56",
+  "type": "button",
+  "states": [
+   "/Yes"
+  ]
+ },
+ {
+  "name": "C - CB - 57",
+  "type": "button",
+  "states": [
+   "/Yes"
+  ]
+ },
+ {
+  "name": "C - CB - 58",
+  "type": "button",
+  "states": [
+   "/Yes"
+  ]
+ },
+ {
+  "name": "C - CB - 59",
+  "type": "button",
+  "states": [
+   "/Yes"
+  ]
+ },
+ {
+  "name": "C - CB - 60",
+  "type": "button",
+  "states": [
+   "/Yes"
+  ]
+ },
+ {
+  "name": "C - CB - 61",
+  "type": "button",
+  "states": [
+   "/Yes"
+  ]
+ },
+ {
+  "name": "C - CB - 62",
+  "type": "button",
+  "states": [
+   "/Yes"
+  ]
+ },
+ {
+  "name": "C - CB - 63",
+  "type": "button",
+  "states": [
+   "/Yes"
+  ]
+ },
+ {
+  "name": "C - CB - 64",
+  "type": "button",
+  "states": [
+   "/Yes"
+  ]
+ },
+ {
+  "name": "C - CB - 65",
+  "type": "button",
+  "states": [
+   "/\rYes"
+  ]
+ },
+ {
+  "name": "C - CB - 66",
+  "type": "button",
+  "states": [
+   "/Yes"
+  ]
+ },
+ {
+  "name": "C - CB - 67",
+  "type": "button",
+  "states": [
+   "/Yes"
+  ]
+ },
+ {
+  "name": "C - CB - 68",
+  "type": "button",
+  "states": [
+   "/Yes"
+  ]
+ },
+ {
+  "name": "C - CB - 69",
+  "type": "button",
+  "states": [
+   "/Yes"
+  ]
+ },
+ {
+  "name": "C - CB - 70",
+  "type": "button",
+  "states": [
+   "/Yes"
+  ]
+ },
+ {
+  "name": "C - CB - 71",
+  "type": "button",
+  "states": [
+   "/Yes"
+  ]
+ },
+ {
+  "name": "C - CB - 72",
+  "type": "button",
+  "states": [
+   "/Yes"
+  ]
+ },
+ {
+  "name": "C - CB - 73",
+  "type": "button",
+  "states": [
+   "/Yes"
+  ]
+ },
+ {
+  "name": "C - CB - 74",
+  "type": "button",
+  "states": [
+   "/Yes"
+  ]
+ },
+ {
+  "name": "C - CB - 75",
+  "type": "button",
+  "states": [
+   "/Yes"
+  ]
+ },
+ {
+  "name": "C - CB - 76",
+  "type": "button",
+  "states": [
+   "/Yes"
+  ]
+ },
+ {
+  "name": "C - CB - 77",
+  "type": "button",
+  "states": [
+   "/Yes"
+  ]
+ },
+ {
+  "name": "C - CB - 78",
+  "type": "button",
+  "states": [
+   "/Yes\r"
+  ]
+ },
+ {
+  "name": "C - CB - 79",
+  "type": "button",
+  "states": [
+   "/Yes"
+  ]
+ },
+ {
+  "name": "C - CB - 80",
+  "type": "button",
+  "states": [
+   "/Yes"
+  ]
+ },
+ {
+  "name": "C - 2 - other",
+  "type": "text",
+  "states": null
+ },
+ {
+  "name": "C - CB - 81",
+  "type": "button",
+  "states": [
+   "/Yes"
+  ]
+ },
+ {
+  "name": "C - CB - 82",
+  "type": "button",
+  "states": [
+   "/Yes"
+  ]
+ },
+ {
+  "name": "C - CB - 83",
+  "type": "button",
+  "states": [
+   "/Yes"
+  ]
+ },
+ {
+  "name": "C - CB - 84",
+  "type": "button",
+  "states": [
+   "/Yes"
+  ]
+ },
+ {
+  "name": "C - CB - 85",
+  "type": "button",
+  "states": [
+   "/Yes"
+  ]
+ },
+ {
+  "name": "C - CB - 86",
+  "type": "button",
+  "states": [
+   "/Yes"
+  ]
+ },
+ {
+  "name": "C - CB - 87",
+  "type": "button",
+  "states": [
+   "/Yes"
+  ]
+ },
+ {
+  "name": "C - CB - 88",
+  "type": "button",
+  "states": [
+   "/Yes"
+  ]
+ },
+ {
+  "name": "C - CB - 89",
+  "type": "button",
+  "states": [
+   "/Yes"
+  ]
+ },
+ {
+  "name": "C - RB - 1",
+  "type": "button",
+  "states": [
+   "/0",
+   "/1"
+  ]
+ },
+ {
+  "name": "C - if yes describe",
+  "type": "text",
+  "states": null
+ },
+ {
+  "name": "C - diagnosis",
+  "type": "text",
+  "states": null
+ },
+ {
+  "name": "D - what is the treatment plan",
+  "type": "text",
+  "states": null
+ },
+ {
+  "name": "D - 1 - work injury/illness medications",
+  "type": "text",
+  "states": null
+ },
+ {
+  "name": "D - 2 - work injury/illness medications",
+  "type": "text",
+  "states": null
+ },
+ {
+  "name": "D - 1 - dose",
+  "type": "text",
+  "states": null
+ },
+ {
+  "name": "D - 2 - dose",
+  "type": "text",
+  "states": null
+ },
+ {
+  "name": "D - 1 - frequency",
+  "type": "text",
+  "states": null
+ },
+ {
+  "name": "D - 2 - frequency",
+  "type": "text",
+  "states": null
+ },
+ {
+  "name": "D - 1 - duration",
+  "type": "text",
+  "states": null
+ },
+ {
+  "name": "D - 2 - duration",
+  "type": "text",
+  "states": null
+ },
+ {
+  "name": "D - 3 - work injury/illness medications",
+  "type": "text",
+  "states": null
+ },
+ {
+  "name": "D - 4 - work injury/illness medications",
+  "type": "text",
+  "states": null
+ },
+ {
+  "name": "D - 3 - dose",
+  "type": "text",
+  "states": null
+ },
+ {
+  "name": "D - 4 - dose",
+  "type": "text",
+  "states": null
+ },
+ {
+  "name": "D - 3 - frequency",
+  "type": "text",
+  "states": null
+ },
+ {
+  "name": "D - 4 - frequency",
+  "type": "text",
+  "states": null
+ },
+ {
+  "name": "D - 3 - duration",
+  "type": "text",
+  "states": null
+ },
+ {
+  "name": "D - 4 - duration",
+  "type": "text",
+  "states": null
+ },
+ {
+  "name": "D - CB - 1",
+  "type": "button",
+  "states": [
+   "/Yes"
+  ]
+ },
+ {
+  "name": "D - CB - 2",
+  "type": "button",
+  "states": [
+   "/Yes"
+  ]
+ },
+ {
+  "name": "D - CB - 3",
+  "type": "button",
+  "states": [
+   "/Yes"
+  ]
+ },
+ {
+  "name": "D - CB - 4",
+  "type": "button",
+  "states": [
+   "/Yes"
+  ]
+ },
+ {
+  "name": "D - CB - 5",
+  "type": "button",
+  "states": [
+   "/Yes"
+  ]
+ },
+ {
+  "name": "D - CB - 6",
+  "type": "button",
+  "states": [
+   "/Yes"
+  ]
+ },
+ {
+  "name": "D - CB - 7",
+  "type": "button",
+  "states": [
+   "/Yes"
+  ]
+ },
+ {
+  "name": "D - CB - 8",
+  "type": "button",
+  "states": [
+   "/Yes"
+  ]
+ },
+ {
+  "name": "D - 1 - other",
+  "type": "text",
+  "states": null
+ },
+ {
+  "name": "D - CB - 9",
+  "type": "button",
+  "states": [
+   "/Yes"
+  ]
+ },
+ {
+  "name": "D - CB - 10",
+  "type": "button",
+  "states": [
+   "/Yes"
+  ]
+ },
+ {
+  "name": "D - CB - 11",
+  "type": "button",
+  "states": [
+   "/Yes"
+  ]
+ },
+ {
+  "name": "D - CB - 12",
+  "type": "button",
+  "states": [
+   "/Yes"
+  ]
+ },
+ {
+  "name": "D - specialist/specialty",
+  "type": "text",
+  "states": null
+ },
+ {
+  "name": "D - CB - 13",
+  "type": "button",
+  "states": [
+   "/Yes"
+  ]
+ },
+ {
+  "name": "D - CB - 14",
+  "type": "button",
+  "states": [
+   "/Yes"
+  ]
+ },
+ {
+  "name": "D - CB - 15",
+  "type": "button",
+  "states": [
+   "/Yes"
+  ]
+ },
+ {
+  "name": "D - CB - 16",
+  "type": "button",
+  "states": [
+   "/Yes"
+  ]
+ },
+ {
+  "name": "D - 2 - other",
+  "type": "text",
+  "states": null
+ },
+ {
+  "name": "D - CB - 17",
+  "type": "button",
+  "states": [
+   "/Yes"
+  ]
+ },
+ {
+  "name": "D - CB - 18",
+  "type": "button",
+  "states": [
+   "/Yes"
+  ]
+ },
+ {
+  "name": "D - name of referral or facility",
+  "type": "text",
+  "states": null
+ },
+ {
+  "name": "D - telephone",
+  "type": "text",
+  "states": null
+ },
+ {
+  "name": "D - appointment date",
+  "type": "text",
+  "states": null
+ },
+ {
+  "name": "E - RB - 1",
+  "type": "button",
+  "states": [
+   "/0",
+   "/1",
+   "/2",
+   "/3"
+  ]
+ },
+ {
+  "name": "E - 1 - service code",
+  "type": "text",
+  "states": null
+ },
+ {
+  "name": "E - WSIB provider ID",
+  "type": "text",
+  "states": null
+ },
+ {
+  "name": "E - HST registration number",
+  "type": "text",
+  "states": null
+ },
+ {
+  "name": "E - HST amount billed",
+  "type": "text",
+  "states": null
+ },
+ {
+  "name": "E - 2 - service code",
+  "type": "text",
+  "states": null
+ },
+ {
+  "name": "E - your invoice number",
+  "type": "text",
+  "states": null
+ },
+ {
+  "name": "E - service date",
+  "type": "text",
+  "states": null
+ },
+ {
+  "name": "E - health professional name ",
+  "type": "text",
+  "states": null
+ },
+ {
+  "name": "E - address",
+  "type": "text",
+  "states": null
+ },
+ {
+  "name": "E - telephone",
+  "type": "text",
+  "states": null
+ },
+ {
+  "name": "E - fax",
+  "type": "text",
+  "states": null
+ },
+ {
+  "name": "WorkerClaimNumber",
+  "type": "text",
+  "states": null
+ },
+ {
+  "name": "A - last name",
+  "type": "text",
+  "states": null
+ },
+ {
+  "name": "A - first name",
+  "type": "text",
+  "states": null
+ },
+ {
+  "name": "A - initials",
+  "type": "text",
+  "states": null
+ },
+ {
+  "name": "A - date of birth",
+  "type": "text",
+  "states": null
+ },
+ {
+  "name": "Area(s) of injury(ies)/illness(es)",
+  "type": "text",
+  "states": null
+ },
+ {
+  "name": "B - date of incident/symptoms",
+  "type": "text",
+  "states": null
+ },
+ {
+  "name": "F - RB - 1",
+  "type": "button",
+  "states": [
+   "/0",
+   "/1"
+  ]
+ },
+ {
+  "name": "F - RB - 2",
+  "type": "button",
+  "states": [
+   "/0",
+   "/1",
+   "/2"
+  ]
+ },
+ {
+  "name": "F - 1 - start date",
+  "type": "text",
+  "states": null
+ },
+ {
+  "name": "F - 1 - graduated hours",
+  "type": "text",
+  "states": null
+ },
+ {
+  "name": "F - 2 - start date",
+  "type": "text",
+  "states": null
+ },
+ {
+  "name": "F - 2 - graduated hours",
+  "type": "text",
+  "states": null
+ },
+ {
+  "name": "F - please provide explanation",
+  "type": "text",
+  "states": null
+ },
+ {
+  "name": "F - CB - 1",
+  "type": "button",
+  "states": [
+   "/Yes"
+  ]
+ },
+ {
+  "name": "F - CB - 2",
+  "type": "button",
+  "states": [
+   "/Yes"
+  ]
+ },
+ {
+  "name": "F - RB - 0",
+  "type": "button",
+  "states": [
+   "/0",
+   "/1"
+  ]
+ },
+ {
+  "name": "F - RB - 3",
+  "type": "button",
+  "states": [
+   "/0",
+   "/1"
+  ]
+ },
+ {
+  "name": "F - RB - 4",
+  "type": "button",
+  "states": [
+   "/0",
+   "/1"
+  ]
+ },
+ {
+  "name": "F - RB - 5",
+  "type": "button",
+  "states": [
+   "/0",
+   "/1"
+  ]
+ },
+ {
+  "name": "F - RB - 6",
+  "type": "button",
+  "states": [
+   "/0",
+   "/1"
+  ]
+ },
+ {
+  "name": "F - RB - 7",
+  "type": "button",
+  "states": [
+   "/0",
+   "/1"
+  ]
+ },
+ {
+  "name": "F - RB - 8",
+  "type": "button",
+  "states": [
+   "/0",
+   "/1"
+  ]
+ },
+ {
+  "name": "F - RB - 9",
+  "type": "button",
+  "states": [
+   "/0",
+   "/1"
+  ]
+ },
+ {
+  "name": "F - RB - 10",
+  "type": "button",
+  "states": [
+   "/0",
+   "/1"
+  ]
+ },
+ {
+  "name": "F - RB - 11",
+  "type": "button",
+  "states": [
+   "/0",
+   "/1"
+  ]
+ },
+ {
+  "name": "F - RB - 12",
+  "type": "button",
+  "states": [
+   "/0",
+   "/1"
+  ]
+ },
+ {
+  "name": "F - RB - 13",
+  "type": "button",
+  "states": [
+   "/0",
+   "/1"
+  ]
+ },
+ {
+  "name": "F - CB - 3",
+  "type": "button",
+  "states": [
+   "/Yes"
+  ]
+ },
+ {
+  "name": "F - please describe",
+  "type": "text",
+  "states": null
+ },
+ {
+  "name": "F - RB - 14",
+  "type": "button",
+  "states": [
+   "/0",
+   "/1",
+   "/2",
+   "/3"
+  ]
+ },
+ {
+  "name": "F - RB - 15",
+  "type": "button",
+  "states": [
+   "/0",
+   "/1"
+  ]
+ },
+ {
+  "name": "F - date of next appointment",
+  "type": "text",
+  "states": null
+ },
+ {
+  "name": "F - health professional\u2019s name",
+  "type": "text",
+  "states": null
+ },
+ {
+  "name": "F - address",
+  "type": "text",
+  "states": null
+ },
+ {
+  "name": "F - health professional's signature",
+  "type": "text",
+  "states": null
+ },
+ {
+  "name": "F - telephone",
+  "type": "text",
+  "states": null
+ },
+ {
+  "name": "F - service date",
+  "type": "text",
+  "states": null
+ },
+ {
+  "name": "Email - CB5",
+  "type": "button",
+  "states": [
+   "/Yes"
+  ]
+ },
+ {
+  "name": "G - signature",
+  "type": "text",
+  "states": null
+ },
+ {
+  "name": "G - date",
+  "type": "text",
+  "states": null
+ },
+ {
+  "name": "Email - CB6",
+  "type": "button",
+  "states": [
+   "/Yes"
+  ]
+ }
+]
